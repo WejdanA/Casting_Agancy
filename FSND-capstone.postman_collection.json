@@ -1,0 +1,1580 @@
+{
+	"info": {
+		"_postman_id": "d3e8690b-5580-4f29-8c09-7781e2fba7d4",
+		"name": "FSND-capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Excutive producer",
+			"item": [
+				{
+					"name": "Movie end point",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"new movie1\",\r\n\"releaseDate\":\"01/01/2010\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"modified movie\",\r\n\"releaseDate\":\"01/01/2006\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/13",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/18",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"18"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "actor endpoint",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"new actor 1\",\r\n\"gender\":\"F\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"Jenifer Aniston\",\r\n\"gender\":\"F\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/6",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/14",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"14"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "cast endpoinrs",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/1/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/7/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"7",
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/id/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/19/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"19",
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"movie_id\":15,\r\n    \"actor_id\":6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast/id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast/12",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast",
+										"12"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRFazJyQ0pwcFJrSFpySzVlMEJ1aiJ9.eyJpc3MiOiJodHRwczovL2Nhc3RpbmctYWdlbmN5LWZzbmR1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMzAyMTMxNzA1NzkwMTQwMDI1NCIsImF1ZCI6ImNhc3QiLCJpYXQiOjE2NDI1NDg0OTIsImV4cCI6MTY0MjYzNDg5MiwiYXpwIjoiUTdpSnZWWGhrd1Q5TDhOajh5YU4xTTRGbnRDY292cloiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvciIsImRlbGV0ZTpjYXN0IiwiZGVsZXRlOm1vdmllIiwiZ2V0OmFjdG9ycyIsImdldDpjYXN0IiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9yIiwicGF0Y2g6bW92aWUiLCJwb3N0OmFjdG9yIiwicG9zdDpjYXN0IiwicG9zdDptb3ZpZSJdfQ.jG0YmRVa9CvOzvjeO_GnmCsIo4bU3F32PUU2X6V_vok6fDwtzlChnLioD2FDyCp_gJhUySPSM9f1cJaOvAULH66RI3XWEqwz66yb9--OT_tc2d-gBcPzS1Cs3W7i3qRsPYIoCzxhtPqF6qKZCQBglh-5KGN5MeX3woJn3wBPOFjdBSw0cNKTAB30clTDXxS7w1pflFjCt5wxUbWBx_Ou7ji0XlZHOL1eovNs4x4q39cJTOGk38dUBeRg6uGbTFmYRFrvoryIFeTWdxzZER0o3iEn3oJC5OTEU3CqMSZe6OS2xRT89FlP6_hNpoYqJELTPTOQUq4TvfAL9MQ8wh6EUw",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRFazJyQ0pwcFJrSFpySzVlMEJ1aiJ9.eyJpc3MiOiJodHRwczovL2Nhc3RpbmctYWdlbmN5LWZzbmR1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MDY0Yjc3OTJhM2UyZTAwNjkzMWFmZjIiLCJhdWQiOiJjYXN0IiwiaWF0IjoxNjE3NzMwMzQ5LCJleHAiOjE2MTc4MTY3NDksImF6cCI6IlE3aUp2Vlhoa3dUOUw4Tmo4eWFOMU00Rm50Q2NvdnJaIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3IiLCJkZWxldGU6Y2FzdCIsImRlbGV0ZTptb3ZpZSIsImdldDphY3RvcnMiLCJnZXQ6Y2FzdCIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvciIsInBhdGNoOm1vdmllIiwicG9zdDphY3RvciIsInBvc3Q6Y2FzdCIsInBvc3Q6bW92aWUiXX0.Rtw0VgB5fGsiweHJXR02LDrnfA0kWe_iUh6z6mstr5TYBs4OqBP7FZN5YDZuBJrwgQkvu4oV-E2G7QQI3S9vgSd7sUnnZjSFlVyFt0fzKMMLFyx7excpBt8fJwFBBbnRdfGZRLgSzgpeLq_IGI3rRYR2KsHW3KE-0KrXta83XJ1Vq2VjyVxYsktMhvgvXcyYtRfQuuR34U0cguQtSVJsyz7GT-cQKDkOyhac_NyEfNiRD_C8CkaUCl1TMRTabwDnZSF7zx4IjuJm2Vk45uTP6_PxG0Zp1MRdsLjMF66V1U4TAluL3mQv2LdHw1PpernCOBVMaMH58x6YyWJY8yrIyw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Casting director",
+			"item": [
+				{
+					"name": "Movie end point",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"modified movie2\",\r\n\"releaseDate\":\"01/01/2006\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/15",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"15"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/20",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"20"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "actor endpoint",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"new actor 2\",\r\n\"gender\":\"F\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"name\":\"Mathewo berry\",\r\n\"gender\":\"M\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/7",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/15",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"15"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "cast endpoinrs",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/1/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/7/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"7",
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/1/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/19/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"19",
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast/1",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRFazJyQ0pwcFJrSFpySzVlMEJ1aiJ9.eyJpc3MiOiJodHRwczovL2Nhc3RpbmctYWdlbmN5LWZzbmR1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MDY0YjYzNjAzNDYyMzAwNjlmNzQ0NWYiLCJhdWQiOiJjYXN0IiwiaWF0IjoxNjQyNTQ5Mzc4LCJleHAiOjE2NDI2MzU3NzgsImF6cCI6IlE3aUp2Vlhoa3dUOUw4Tmo4eWFOMU00Rm50Q2NvdnJaIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3IiLCJnZXQ6YWN0b3JzIiwiZ2V0OmNhc3QiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3IiLCJwYXRjaDptb3ZpZSIsInBvc3Q6YWN0b3IiXX0.pNXLYzObNE01DJSaVRe94KQhEimDBMwDYDBEORewyMUTWohbPxGOh-eK0pZZFpb9g1oL0X_AbVJ8U_JEmnzP_QGlk_R1HpboWxlbDMd6yfSG7AQ5uvpZglnQ_7-33AZ8kxXCRmZzAFVS2l-Dt56wWjE30bOXEkr6tO_PbT4aA7dGlU5Bh2RsuKKvLAldTyO64JiATKO2zcUK_8rIvyh0FIJdFGizzhhhqaShVsCXt8qDuTHGFhnC_4oOLrM6aqABVHvOUsvxScFoZ5xC_73MskrvsBqEVOtzjoX--Nd5G0dAro2Xxz4vQdqrYGzQXxJCE65aXVPsKFHf685elYsJvA",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Casting Assistant",
+			"item": [
+				{
+					"name": "Movie end point",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/1",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/1",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "actor endpoint",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/1",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/1",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "cast endpoinrs",
+					"item": [
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/actors/1/movies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/actors/7/movies",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"actors",
+										"7",
+										"movies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/movies/1/actors",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/movies/19/actors",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"movies",
+										"19",
+										"actors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "https://finalcapstone-app.herokuapp.com/cast/1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 401\", function () {\r",
+											"    pm.response.to.have.status(401);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://finalcapstone-app.herokuapp.com/cast/6",
+									"protocol": "https",
+									"host": [
+										"finalcapstone-app",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"cast",
+										"6"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRFazJyQ0pwcFJrSFpySzVlMEJ1aiJ9.eyJpc3MiOiJodHRwczovL2Nhc3RpbmctYWdlbmN5LWZzbmR1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MDY0YjVkYTAxZTJjNTAwNjkyMTIzY2EiLCJhdWQiOiJjYXN0IiwiaWF0IjoxNjQyNTQ5MTA1LCJleHAiOjE2NDI2MzU1MDUsImF6cCI6IlE3aUp2Vlhoa3dUOUw4Tmo4eWFOMU00Rm50Q2NvdnJaIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0OmNhc3QiLCJnZXQ6bW92aWVzIl19.fhTfKEiHYT0cM1j4O_FbewS8Fl06CE_2kBFbu-BI5-ItYztvTmqN9MzalAtv3eONVcjOXf4lfeJ6T61iEEmG1egjBrXX-PBrT_C3kbJ-aaenrMa9R_S9Rf8Rr1T-ecSjKSMQPsIySiuTDATns1j5ZmEjwANCG3kusvjDSKWAcwSV8GGETXztaiuhkZtogOh2_1PtqIZpaZkr8vmKX_TVHOU24DVMyaQbdqWOVsCtuhmlmOat1oZHgunLyY1Lu9zTqpOlBM4uJNSQWsS_c00CewFpSP-QSrRoVWmvsC4casuHyzhunFw6rb-t5cmuKy_CMjjp4igW9tRpmMjGCcznVw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRFazJyQ0pwcFJrSFpySzVlMEJ1aiJ9.eyJpc3MiOiJodHRwczovL2Nhc3RpbmctYWdlbmN5LWZzbmR1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2MDY0Yjc3OTJhM2UyZTAwNjkzMWFmZjIiLCJhdWQiOiJjYXN0IiwiaWF0IjoxNjE3MzQ0OTk5LCJleHAiOjE2MTczNTIxOTksImF6cCI6IlE3aUp2Vlhoa3dUOUw4Tmo4eWFOMU00Rm50Q2NvdnJaIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3IiLCJkZWxldGU6Y2FzdCIsImRlbGV0ZTptb3ZpZSIsImdldDphY3RvcnMiLCJnZXQ6Y2FzdCIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvciIsInBhdGNoOm1vdmllIiwicG9zdDphY3RvciIsInBvc3Q6Y2FzdCIsInBvc3Q6bW92aWUiXX0.RWPTMApWiLBacx8YtBqVvaMN8x7KvKCUbsjITvs_dikbbAveFTx6xu1dJNlhpmqM46gayI1J1UY_jRDtbum091TmDcIbI0hT4N3Sxe0ymMH4BfLeVDH5nwunQMsDZCO2_LCwnIhQVRuW_Vlz2ScvgoqqWZNzjNrALpYKgTL8Dt4RSec0g-cv4YN8QtWmpymhFnRlyR2mDCmRn95sVJtjQeil-KpmWbq9gStpIZ7OFshb6UoBEy44QNWvPTQevHL3-jKmdQzm7p-1z8R3ZiZFX7qk0gY5hav3eejzEoxMmys3KjhrkeelznAyAR6yadcJsU48AuZs6OVtRwfrC8GWNQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
