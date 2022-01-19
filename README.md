@@ -1,6 +1,6 @@
 # Full Stack Capstone project
 
-##project description
+## project description
 This project performed as part of Udacity FSND program. it is casting agency that has three models actor,movies and cast model which connect the actors with the movie they act in.the project used python,flask and sqlalchemy.
 
 ## Getting Started
